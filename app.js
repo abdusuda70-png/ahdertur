@@ -1,4 +1,4 @@
-const sidebar = document.getElementById('sidebar')
+var sidebar = document.getElementById('sidebar')
 
 
 function togglesidebar(){
