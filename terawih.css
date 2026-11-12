@@ -300,7 +300,7 @@ section .btn{
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr;
-    gap: 5rem;
+    gap: 3rem;
     padding: 1rem;
   }
   
