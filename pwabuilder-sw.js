@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ahder-offline-v1';
+const ahder = 'ahder-offline-v1';
 const "app.js","icon-192.png.jpg","icon-512.png.png","index.html","manifest.json","pwabuilder-sw.js","terawih.css","img/1794321873721.jpg","img/2026-ramadan-mubarak-night-moon-4k-desktop-wallpaper-311.jpg"= [
   './',
   './index.html',
