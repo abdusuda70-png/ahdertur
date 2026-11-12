@@ -1,0 +1,356 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+  border: none;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+/*----------------header-section------------------*/
+header{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6%;
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.logo-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-section img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+  transition: 0.5s;
+  border: 0.1rem solid rgb(0, 0, 0);
+}
+
+.logo-section img:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgb(46, 190, 238);
+}
+
+.logo{
+  color: rgb(136, 186, 202);
+  font-weight: 800;
+  font-size: 3rem;
+  transition: 0.5s;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+  text-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+nav{
+  background-color: rgb(15, 15, 15);
+}
+nav a{
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  font-weight: 500;
+  margin-right: 3.5rem;
+  border-bottom: 0.3rem solid transparent;
+  transition: 0.5s;
+}
+nav a:hover,
+nav a.active{
+  border-bottom: 0.3rem solid rgb(46, 190, 238);
+  color: rgb(46, 190, 238);
+}
+@media(max-width:995px){
+  nav{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    max-height: 75vh;
+    overflow-y: auto;
+    border-left: 3px solid rgb(136, 186, 202);
+    border-bottom: 3px solid rgb(135, 196, 216);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+  }
+  .menu{
+    display: flex;
+  }
+  nav a.active{
+    display: block;
+    border-bottom: 0.4rem solid rgb(46, 190, 238);
+  }
+  nav img{
+    width: 3rem;
+  }
+  nav a{
+    display: block;
+    margin-top: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    margin-left: 4px;
+  }
+  nav a:hover{
+    padding: 1rem;
+    border-bottom-left-radius: 0.8rem;
+  }
+ .bt{
+    position: absolute;
+    right: 3rem;
+    padding: 0.3rem 1rem;
+    border: 2px solid rgb(135, 196, 216);
+    background-color: rgb(136, 186, 202);
+    color: black;
+    border-radius: 3px;
+  }
+
+  .bt:active{
+    background-color: black;
+    color: rgb(136, 186, 202);
+  }
+  .show{
+    display: none;
+    }
+}
+.nav-class{
+  font-family: sans-serif;
+}
+/*---------------------hero section-------------*/
+section{
+  min-height: 100vh;
+  padding: 8rem 0% 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 9% 1rem;
+  gap: 8rem;
+}
+section img{
+  width: 36vw;
+  height: 33vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(46,190,238,);
+  border: 0.3rem solid rgb(46, 190, 238,);
+  transition: 0.3s;
+}
+section h1{
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 5rem;
+}
+section h1 span{
+  color: rgb(46, 190, 238)
+}
+
+section h3{
+  font-size: 3rem;
+  margin-top: 1.3rem;
+  margin-bottom: 2px;
+}
+ 
+.head-3 span{
+  position: relative;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.head-3 span::before{
+  content: "ወራሀመቱላሂ";
+  color: rgb(46, 190, 238);
+  animation: words 5s infinite;
+}
+.head-3 span::after{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: rgb(34, 148, 185);
+  right: -6px;
+  top: 0;
+  animation: cursor 0.6s infinite;
+}
+@keyframes cursor{
+  0%,50%{
+    opacity: 0;
+  }
+  51%,100%{
+    opacity: 1;
+  }
+}
+@keyframes words{
+  0%,50%{
+    content: "ወራህመቱላሂ";
+  }
+  51%,100%{
+    content: "ወበረካቱሁ";
+  }
+}
+section p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  word-spacing: 1px;
+  line-height: 1.2rem;
+}
+section a img{
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  margin-right: 0.3rem;
+  transition: 0.5s;
+  background-color: white;
+}
+section a img:hover{
+  transform: scale(1.2) translateY(-3px);
+  box-shadow: 0 0 25px rgba(46, 190, 238,10);
+}
+
+section .btn{
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1.8rem;
+  padding: 0.7rem 3.5rem;
+  border: 0.2rem solid rgb(135, 196, 216);
+  background-color: black;
+  color: rgb(135, 196, 216);
+}
+.btn:hover{
+  background-color: rgb(135, 196, 216);
+  color: rgb(0, 0, 0);
+}
+@media(max-width:995px){
+  .home{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 3rem;
+    border-bottom: 3px solid rgb(135, 196, 216);
+  }
+  .logo{
+    font-size: 2rem;
+  }
+  .logo-section img{
+    width: 3rem;
+    height: 3rem;
+  }
+  section h1{
+    font-size: 3rem;
+  }
+  section img{
+    width: 70vw;
+    height: 60vw;
+  }
+} 
+ 
+@media(min-width:0px) and (max-width:950px){
+  section{
+    margin: 3rem 2rem;
+  }
+  section h1{
+    font-size: 14px;
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+  section h3{
+    font-size: 14px;
+    margin-top: 0rem;
+    margin-bottom: 0,2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  section h3 span{
+   font-size: 14px;
+   font-weight: 400;
+  }
+   section p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #d1d5db;
+  }
+}
+/*-----------------------grid cards------------------*/
+
+@media(min-width:0px) and (max-width:950px){
+  .card-grid{
+    background-color: black;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding: 1rem;
+  }
+  
+  .card-1{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-image: url(img/terawih.jpg);
+    color: white;
+    background-size: 35rem;
+    border: 0.1rem solid #3a7bd5;
+    box-shadow: 0 0 15px rgba(238, 251, 255,0.3);
+    border-radius: 1rem;
+    overflow: hidden;
+    background-blend-mode: overlay;
+  }
+  .card-icon{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    font-weight: bold;
+    font-size: 5rem;
+  }
+  .card-2{
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    background-image: url(img/1821420553.webp);
+    background-size: 45rem;
+    background-position: center;
+      border: 0.1rem solid #3a7bd5;
+    box-shadow: 0 0 15px rgba(238, 251, 255,0.3);
+    border-radius: 0.5rem;
+    background-blend-mode: overlay;
+  }
+  .card-3{
+    align-items: center;
+    display: flex;
+    gap: 2.5rem;
+    background-image: url(img/pngtree-graceful-feast-savoring-the-elegance-of-ramadan-iftar-image_15622636.jpg);
+    background-size: 40rem;
+    background-position: center;
+      border: 0.1rem solid #3a7bd5;
+    box-shadow: 0 0 15px rgba(238, 251, 255,0.3);
+    border-radius: 1rem;
+  }
+  
+  .nav-class{
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+  }
+}
