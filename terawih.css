@@ -353,4 +353,31 @@ section .btn{
     font-weight: 800;
     font-size: 3rem;
   }
+  /*--------------contact-----part-----------------------*/
+ .contact{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+ }
+ .contact h3{
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  padding: 3rem;
+  color: #ffffff;
+ }
+ .contact-div{
+  font-size: 1.1rem;
+  padding: 1rem;
+  width: 100%;
+  color: #ffffff;
+  
+  line-height: 1.5rem;
+  box-shadow: 0 0 15px rgba(238, 251, 255,0.3);
+ }
+ .telegram{
+  text-decoration:underline;
+  color:#3a7bd5;
+ }
 }
