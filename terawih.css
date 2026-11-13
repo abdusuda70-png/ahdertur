@@ -18,7 +18,11 @@ body{
   color: white;
   overflow-x: hidden;
 }
-
+html, body {
+    touch-action: manipulation;
+    /* ወይም ማጉላትን ሙሉ በሙሉ ለመቆጣጠር */
+    -webkit-text-size-adjust: 100%;
+}
 /*----------------header-section------------------*/
 header{
   padding: 20px;
