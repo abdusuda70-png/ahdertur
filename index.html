@@ -67,6 +67,14 @@
       <div class="footer">all rgihts servid C@ 2026</div>
     </div>
    </section>
+<script type="text/javascript">
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(()=>console.log("Service worker registered"))
+    .catch((error)=>console.log("Service worker failed",error));
+}
+</script>
+
  </body>  
 </html>
 </html>
