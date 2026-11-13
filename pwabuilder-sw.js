@@ -4,16 +4,7 @@ const ASSETS_TO_CACHE = [
   './index.html',
   './app.js',
   './manifest.json',
-  './terawih.css',
-  './img/icon-192.png.jpg',
-  './img/icon-512.png',
-  './img/1794321873721.jpg',
-  './img/linkedin.png',
-  './img/github-logo.png',
-  './img/terawih.jpg',
-  './img/1821420553.webp',
-  './img/pngtree-gracefull-feast-savoring-the-elegance-of-ramadan-iftar-image_15622636.jpg',
-  './img/2026-ramadan-mubarak-night-moon-4k-desktop-wallpaper-311.jpg'
+  './terawih.css'
 ];
 
 self.addEventListener('install', (event) => {
