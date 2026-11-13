@@ -1,10 +1,10 @@
  const CACHE_NAME = 'ahder-offline-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/app.js',
-  '/manifest.json',
-  '/terawih.css'
+  './',
+  './index.html',
+  './app.js',
+  './manifest.json',
+  './terawih.css'
 ];
 
 self.addEventListener('install', (event) => {
