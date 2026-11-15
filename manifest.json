@@ -6,6 +6,8 @@
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
+   "orientation": "portrait",
+"id": "/?source=pwa",
   "icons": [
     {
       "src": "icon-192x192[1].png",
